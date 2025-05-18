@@ -1,0 +1,324 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+
+      background-color: #d1f6fd;
+      /* Azul celeste claro */
+    }
+
+    header {
+      background-color: #20b2aa;
+      /* Verde azulado */
+      color: white;
+      text-align: center;
+      padding: 20px 0px 0px 0px;
+    }
+
+    /* Estilos para la barra de navegación */
+    nav {
+      background-color: #1ee6c9;
+      padding: 0.5em;
+      font-family: inherit;
+      font-size: larger;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      /* Espaciado uniforme entre los elementos */
+      align-items: center;
+      /* Alinea verticalmente los elementos */
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      /* Distribuye uniformemente los elementos */
+      width: 100%;
+      /* Asegura que los elementos llenen todo el espacio horizontal */
+      gap: 0;
+      /* Espacio adicional entre los elementos (ajústalo si lo necesitas) */
+    }
+
+    nav ul li {
+      text-align: center;
+    }
+
+    nav ul li a {
+      color: #083c34;
+      text-decoration: none;
+    }
+
+    /* Estilo del formulario de búsqueda */
+    form.d-flex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      /* Espacio entre el input y el botón */
+    }
+
+    /* Estilo del ícono al final */
+    nav img {
+      margin-left: 15px;
+    }
+
+    /* Botón de menú oculto por defecto */
+    .toggle-nav {
+      display: none;
+      /* Oculta el botón inicialmente */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Estilos para la barra de navegación en pantallas pequeñas */
+    @media (max-width: 767px) {
+      nav ul {
+        flex-direction: column;
+        display: none;
+        /* Oculta la barra de navegación por defecto en pantallas pequeñas */
+      }
+
+      nav ul li {
+        margin-right: 0;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav ul li:last-child a {
+        border-bottom: none;
+      }
+    }
+
+
+
+
+    /* Boton para desplegar la lista */
+    .toggle-nav {
+      display: block;
+      display: block;
+      /* Muestra el botón en pantallas pequeñas */
+      background-color: #1ee6c9;
+      border: none;
+      padding: 0.5em;
+      color: #083c34;
+      font-size: 1em;
+      cursor: pointer;
+
+      padding: 10px;
+
+
+    }
+
+    /* Estilos para la lista desplegable */
+    .nav-show {
+      display: block;
+    }
+    
+
+/* Estilos personalizados para la sección Contactanos */
+.contact ul li a {
+  color: #007BFF; /* Azul intenso */
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #007BFF; /* Línea debajo */
+  transition: all 0.3s ease;
+}
+
+.contact ul li a:hover {
+  color: #0056b3; /* Azul más oscuro al pasar el cursor */
+  border-bottom: 2px solid #0056b3; /* Cambia la línea al mismo color */
+  background-color: #E3F2FD; /* Fondo azul claro */
+  padding: 0.1rem 0.3rem; /* Añade un pequeño relleno */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos personalizados para la sección Ayuda */
+.help ul li a {
+  color: #FF4500; /* Naranja fuerte */
+  font-style: italic; /* Texto en cursiva */
+  text-decoration: underline; /* Subrayado */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.help ul li a:hover {
+  color: #FFFFFF; /* Texto blanco al pasar el cursor */
+  background-color: #FF4500; /* Fondo naranja fuerte */
+  text-decoration: none; /* Sin subrayado */
+  padding: 0.2rem 0.4rem; /* Relleno interno */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+
+
+
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 2em;
+    }
+
+    .cta-button {
+      background-color: #ff69b4;
+      /* Rosa mas intenso */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* -------------------agraegado prueba---------------------- */
+
+    footer {
+      background-color: #18d0f4;
+      padding: 1em;
+      text-align: center;
+      color: #fff;
+    }
+
+    .dani {
+
+      padding: 0.5em;
+      text-align: center;
+      /* Add this to center the nav */
+      width: 100%;
+      /* Add this to make it full width */
+      margin: 0;
+      /* Elimina los margenes */
+    }
+
+    .dani ul {
+      padding-left: 25px;
+      padding-right: 25px;
+      display: flex;
+      /* Add this to make the list items inline-block */
+      justify-content: space-between;
+      /* Add this to space the list items evenly */
+      margin: 0;
+      /* Elimina los margenes */
+    }
+
+    .dani li {
+      margin: 0;
+      /* Elimina los margenes */
+      padding-top: 0.5%;
+    }
+
+    .dropdown {
+      display: none;
+      /* Hide the dropdown by default */
+      position: absolute;
+      /* Position the dropdown absolutely */
+      background-color: #ffc0cb;
+      /* Rosa */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .dani li:hover>.dropdown {
+      display: block;
+      /* Show the dropdown on hover */
+    }
+
+    .dropdown li {
+      margin-bottom: 10px;
+    }
+
+    .dropdown li:last-child {
+      margin-bottom: 0;
+    }
+
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .hero {
+      background-image: url(' https://www.shutterstock.com/image-photo/medicine-green-yellow-pills-capsules-260nw-1012123216.jpg ');
+      background-size: cover;
+      background-position: center;
+
+      /*
+  justify-content: center;
+  align-items: center;*/
+      color: #723185;
+      /* ajusta el color del texto */
+    }
+
+
+    .rgt-button {
+
+      background-color: #ff69b4;
+      /* Rosa mas intenso */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+
+
+    }
+
+
+    .services {
+      background-color: #f7f7f7;
+    }
+
+    .about {
+      background-color: #f7f7f7;
+    }
+
+    .contact {
+      background-color: #f7f7f7;
+      padding-bottom: 40px;
+    }
+
+    .help {
+      background-color: #f7f7f7;
+      padding-top: 40px;
+    }
+
+    .welcome {
+      background-color: #f7f7f7;
+
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* etc. */
+ 

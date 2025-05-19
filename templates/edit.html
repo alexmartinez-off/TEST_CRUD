@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Editar Usuario</title></head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuario</title>
+</head>
+
 <body>
-<h2>Editar Usuario</h2>
-<form method="POST">
-  <input type="text" name="username" value="{{ usuario[1] }}" required><br>
-  <input type="email" name="email" value="{{ usuario[2] }}" required><br>
-  <input type="date" name="fecha_nacimiento" value="{{ usuario[3] }}" required><br>
-  <input type="text" name="ciudad" value="{{ usuario['password'] }}" required><br>
-  <button type="submit">Guardar Cambios</button>
-</form>
-<a href="{{ url_for('dashboard') }}">Volver</a>
-</body></html>
+  <h2>Editar Usuario</h2>
+  <form method="POST">
+    <input type="text" name="username" value="{{ usuario[1] }}" required><br>
+    <input type="email" name="email" value="{{ usuario[2] }}" required><br>
+    <input type="date" name="fecha_nacimiento" value="{{ usuario[3] }}" required><br>
+    <input type="text" name="ciudad" value="{{ usuario['password'] }}" required><br>
+    <button type="submit">Guardar Cambios</button>
+  </form>
+  <a href="{{ url_for('dashboard') }}">Volver</a>
+</body>
+
+</html>

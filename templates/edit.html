@@ -4,18 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Editar Usuario</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
 </head>
 
+
+<!--
+
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuario</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='registro.css') }}">
+</head> -->
+
 <body>
-  <h2>Editar Usuario</h2>
-  <form method="POST">
-    <input type="text" name="username" value="{{ usuario[1] }}" required><br>
-    <input type="email" name="email" value="{{ usuario[2] }}" required><br>
-    <input type="date" name="fecha_nacimiento" value="{{ usuario[3] }}" required><br>
-    <input type="text" name="ciudad" value="{{ usuario['password'] }}" required><br>
-    <button type="submit">Guardar Cambios</button>
-  </form>
-  <a href="{{ url_for('dashboard') }}">Volver</a>
+  <div class="container">
+    <header>
+      <a href="{{ url_for('dashboard') }}" class="back-arrow">&larr;</a> <!-- Flecha para volver a dashboard -->
+      <h1>Editar Usuario</h1>
+      <p>Modifica los datos y guarda los cambios.</p>
+    </header>
+
+    <form method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" value="{{ usuario['nombre'] }}" required>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido" value="{{ usuario['apellido'] }}" required>
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" name="telefono" id="telefono" value="{{ usuario['telefono'] }}" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" value="{{ usuario['email'] }}" required>
+
+      <label for="fecha_nacimiento">Fecha de nacimiento</label>
+      <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" value="{{ usuario['fecha_nacimiento'] }}" required>
+
+      <button type="submit">Guardar Cambios</button>
+    </form>
+
+    <footer>
+      <p><a href="{{ url_for('dashboard') }}">Volver al panel</a></p>
+    </footer>
+  </div>
 </body>
 
 </html>

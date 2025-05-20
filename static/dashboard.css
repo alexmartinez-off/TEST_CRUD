@@ -1,0 +1,96 @@
+/* Reset y fuente base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo y centrado del contenido principal */
+body {
+    background-color: #E0F7FA;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor principal del panel */
+.container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tabla de usuarios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #B2EBF2;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+th {
+    background-color: #B2EBF2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Botones de acción (editar, eliminar) */
+a.action-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+
+.edit {
+    background-color: #00796B;
+}
+
+.edit:hover {
+    background-color: #004D40;
+}
+
+.delete {
+    background-color: #e53935;
+}
+
+.delete:hover {
+    background-color: #b71c1c;
+}
+
+/* Enlace para cerrar sesión */
+.logout-link {
+    display: block;
+    text-align: center;
+    color: #00796B;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
